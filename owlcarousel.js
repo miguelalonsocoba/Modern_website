@@ -14,3 +14,7 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+$(".menu-icon").click(function () {
+  $("header nav").slideToggle();
+});
