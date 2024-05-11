@@ -222,3 +222,103 @@ footer a:hover {
   top: 85%;
   right: 15px;
 }
+
+.menu-icon {
+  /* Se oculta el elemento, ya que solo se muestra cuando el tamaño de la pantalla es menor a 480px */
+  display: none;
+}
+
+/* El medio por el cual se vizualizara la página tenga un maximo de ancho de 480px */
+@media (max-width: 800px) {
+  /* Se va a aplicar cuando el MAXIMO DE ANCHO sea de 480px */
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 13px;
+  }
+
+  .headline {
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 49px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .container-about-me {
+    flex-direction: column;
+  }
+
+  .container-p-button {
+    width: 90%;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 72%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 46px;
+  }
+
+  .container-why {
+    flex-direction: column;
+  }
+
+  .why-single {
+    width: 95%;
+  }
+
+  .container-publications {
+    flex-direction: column;
+  }
+
+  .publication {
+    width: 85%;
+    margin: auto;
+  }
+
+  .img-about-me {
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  header {
+    height: 53vh;
+  }
+
+  .img-about-me {
+    width: 50%;
+  }
+
+  .service {
+    width: 44%;
+  }
+
+  .publication {
+    width: 62%;
+  }
+}
