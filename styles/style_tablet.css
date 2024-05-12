@@ -1,0 +1,17 @@
+@media (min-width: 700px) and (max-width: 900px) {
+  header {
+    height: 53vh;
+  }
+
+  .img-about-me {
+    width: 50%;
+  }
+
+  .service {
+    width: 44%;
+  }
+
+  .publication {
+    width: 62%;
+  }
+}
